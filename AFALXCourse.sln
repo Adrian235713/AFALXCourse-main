@@ -14,7 +14,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ALXCalculator", "ALXCalcula
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlxCourseHomework1", "AlxCourseHomework1\AlxCourseHomework1.csproj", "{6F00BC97-993D-45AF-8D3F-5C9ECBF59394}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ALXhomeworkScript1", "ALXhomeworkScript\ALXhomeworkScript1.csproj", "{C71FE9CB-4ABE-4BA2-A487-69E5657DF434}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ALXhomeworkPodrecznik1", "ALXhomeworkScript\ALXhomeworkPodrecznik1.csproj", "{C71FE9CB-4ABE-4BA2-A487-69E5657DF434}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
