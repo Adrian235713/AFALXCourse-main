@@ -16,6 +16,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlxCourseHomework1", "AlxCo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ALXhomeworkPodrecznik1", "ALXhomeworkScript\ALXhomeworkPodrecznik1.csproj", "{C71FE9CB-4ABE-4BA2-A487-69E5657DF434}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{30D01776-648A-4B67-9537-7F8124DC0A4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ALXhomeworkPodrecznik2", "ALXhomeworkPodrecznik2\ALXhomeworkPodrecznik2.csproj", "{6C578B9A-B681-42A8-A126-CBFF934105ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,9 +42,20 @@ Global
 		{C71FE9CB-4ABE-4BA2-A487-69E5657DF434}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C71FE9CB-4ABE-4BA2-A487-69E5657DF434}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C71FE9CB-4ABE-4BA2-A487-69E5657DF434}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30D01776-648A-4B67-9537-7F8124DC0A4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30D01776-648A-4B67-9537-7F8124DC0A4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30D01776-648A-4B67-9537-7F8124DC0A4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30D01776-648A-4B67-9537-7F8124DC0A4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C578B9A-B681-42A8-A126-CBFF934105ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C578B9A-B681-42A8-A126-CBFF934105ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C578B9A-B681-42A8-A126-CBFF934105ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C578B9A-B681-42A8-A126-CBFF934105ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{30D01776-648A-4B67-9537-7F8124DC0A4E} = {46E6A54B-34EB-4DB8-BC36-D85DC9A8F9E1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C6F43661-1260-47E1-B01E-7B79D229A933}
