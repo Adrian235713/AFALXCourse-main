@@ -17,6 +17,9 @@ namespace ALXhomeworkPodrecznik2
             Exercise1 exercise1 = new Exercise1();
             exercise1.exercise1();
             Console.WriteLine("---------------------------------------------------");
+            int[,] Matrix = exercise1.generateIdentityMatrix(25);
+            exercise1.displayMatrix(Matrix);
+            Console.WriteLine("---------------------------------------------------");
             Console.WriteLine("Exercise2");
             Console.WriteLine("---------------------------------------------------");
             Exercise2 exercise2 = new Exercise2();

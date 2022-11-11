@@ -39,6 +39,34 @@ namespace ALXhomeworkPodrecznik2
             }
         }
 
+        public int[,] generateIdentityMatrix(int k)
+        {
+            int[,] Matrix = new int[k, k];
+            for (int i = 0; i < Matrix.GetLength(0); i++)
+            {
+                for (int j = 0; j < Matrix.GetLength(1); j++)
+                {
+                    if (j == i)
+                    {
+                        Matrix[i, j] = 1;
+                    }
+                }
+            }
+            return Matrix;
+        }
+
+        public void displayMatrix(int[,] Matrix)
+        {
+            for (int i = 0; i < Matrix.GetLength(0); i++)
+            {
+                for (int j = 0; j < Matrix.GetLength(1); j++)
+                {
+                    Console.Write($"{Matrix[i, j]} ");
+                }
+                Console.WriteLine();
+            }
+        }
+
 
 
 
