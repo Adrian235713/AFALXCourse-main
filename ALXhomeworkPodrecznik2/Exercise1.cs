@@ -67,9 +67,36 @@ namespace ALXhomeworkPodrecznik2
             }
         }
 
+        public static void exercise3()
+        {
+            List <double> myList = new List<double>();
+            while (true)
+            {
+                Console.WriteLine("l = live | Add a number to the array");
+                string inp = Console.ReadLine().ToLower();
+                if (inp == "l")
+                { 
+                    break;
+                }
+                myList.Add(double.Parse(inp));
+            }
 
+            double[] array1 = myList.ToArray();
 
+            Console.WriteLine("by what number to increase ?");
+            double inp2 = double.Parse(Console.ReadLine());
 
-
+            double[] array2 = new double[array1.Length];
+            foreach(double x in array1)
+            {
+                Console.Write($"{x} ");
+            }
+            Console.WriteLine();
+            foreach (double x in array1)
+            {
+                Console.Write($"{x + inp2} ");
+            }
+            Console.WriteLine();
+        }
     }
 }
