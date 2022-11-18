@@ -20,6 +20,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ALXhomeworkPodrecznik2", "A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ALXhomeworkPodrecznik3", "ALXhomeworkPodrecznik3\ALXhomeworkPodrecznik3.csproj", "{4BD1AB9E-B0B9-452D-A739-C7193679EBAB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meeting3", "Spotkanie3\Meeting3.csproj", "{FD794282-2A3B-431C-BCDE-94575F275566}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +52,10 @@ Global
 		{4BD1AB9E-B0B9-452D-A739-C7193679EBAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BD1AB9E-B0B9-452D-A739-C7193679EBAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4BD1AB9E-B0B9-452D-A739-C7193679EBAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD794282-2A3B-431C-BCDE-94575F275566}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD794282-2A3B-431C-BCDE-94575F275566}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD794282-2A3B-431C-BCDE-94575F275566}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD794282-2A3B-431C-BCDE-94575F275566}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
