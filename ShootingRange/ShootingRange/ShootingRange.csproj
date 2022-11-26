@@ -43,10 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Shop\Guns\Gun.cs" />
-    <Compile Include="Shop\Guns\GunsInterface.cs" />
-    <Compile Include="Shop\Shop.cs" />
-    <Compile Include="Shop\ShopInterface.cs" />
+    <Compile Include="ShopFolder\Guns\Gun.cs" />
+    <Compile Include="ShopFolder\Guns\GunsInterface.cs" />
+    <Compile Include="ShopFolder\OrderFolder\Order.cs" />
+    <Compile Include="ShopFolder\OrderFolder\OrderInheritance.cs" />
+    <Compile Include="ShopFolder\Shop.cs" />
+    <Compile Include="ShopFolder\ShopInterface.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

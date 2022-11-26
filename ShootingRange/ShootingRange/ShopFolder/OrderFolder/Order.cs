@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ShootingRange.Shop.Guns
+namespace ShootingRange.ShopFolder.OrderFolder
 {
-    internal interface GunsInterface
+    internal class Order : OrderInheritance
     {
+
     }
 }
