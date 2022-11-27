@@ -10,9 +10,7 @@ namespace ShootingRange
     {
         void Infofmations();
         void AddOrder();
-        void UpdateOrder();
         void DeleteOrder();
         void AdGun();
-
     }
 }

@@ -4,7 +4,7 @@ namespace ShootingRange.Shop.Guns
 {
     internal class Gun : GunsInterface
     {
-        private string ID;
+        public string ID;
         private string name;
         private int bullets;
         private double prizeForOneShot;
@@ -76,10 +76,10 @@ namespace ShootingRange.Shop.Guns
         public void Information()
         {
             Console.WriteLine("-----------------------------------------------------------------------");
-            Console.WriteLine($"ID - {ID}");
-            Console.WriteLine($"Name - {Name}");
-            Console.WriteLine($"Bullets - {Bullets}");
-            Console.WriteLine($"PrizeForOneShot - {PrizeForOneShot}");
+            Console.WriteLine($"ID \t {ID}");
+            Console.WriteLine($"Name \t {Name}");
+            Console.WriteLine($"Bullets \t {Bullets}");
+            Console.WriteLine($"PrizeForOneShot \t {PrizeForOneShot}");
             Console.WriteLine("-----------------------------------------------------------------------");
         }
 
@@ -100,6 +100,12 @@ namespace ShootingRange.Shop.Guns
                 Console.WriteLine("Not enough bullets in stock");
             else
                 bullets = bullets + change;
+        }
+
+
+        public void EditionAmmunitionOrder(int change)
+        {
+                bullets = bullets - change;
         }
 
         public void StatusPrizeForOneShot()

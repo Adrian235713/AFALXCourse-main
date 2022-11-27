@@ -45,9 +45,10 @@ namespace ShootingRange
                 Console.WriteLine("-----------------------------------------------------------------------");
                 Console.WriteLine("\t\t\t\t USER INTERFACE");
                 Console.WriteLine("-----------------------------------------------------------------------");
-                Console.WriteLine("a - Infofmations l - live");
+                Console.WriteLine("a - Infofmations Magazine l - live o - AddOrder oo - OrderInformation");
+                Console.WriteLine("r - DeleteOrderByID");
                 Console.WriteLine("-----------------------------------------------------------------------");
-                var inp = Console.ReadLine().ToLower();
+                var inp = Console.ReadLine().ToLower().Trim();
                 switch (inp)
                 {
                     case "l":
@@ -56,6 +57,18 @@ namespace ShootingRange
                     case "a":
                         Console.Clear();
                         shop.Infofmations();
+                        break;
+                    case "o":
+                        Console.Clear();
+                        shop.AddOrder();
+                        break;
+                    case "oo":
+                        Console.Clear();
+                        shop.OrderInformation();
+                        break;
+                    case "r":
+                        Console.Clear();
+                        shop.DeleteOrder();
                         break;
                     default:
                         Console.Clear();
@@ -67,6 +80,8 @@ namespace ShootingRange
 
 
             }
+            Console.WriteLine("Thank you for your hard work !!!");
+            Console.WriteLine("See you ;)");
             Console.ReadKey();
         }
     }

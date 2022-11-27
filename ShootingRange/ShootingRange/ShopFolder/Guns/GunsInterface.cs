@@ -12,5 +12,6 @@ namespace ShootingRange.Shop.Guns
         void RenameGun();
         void StausEditionAmmunition();
         void StatusPrizeForOneShot();
+        void EditionAmmunitionOrder(int change);
     }
 }
