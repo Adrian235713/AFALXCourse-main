@@ -5,9 +5,10 @@ namespace ShootingRange.Shop.Guns
     internal class Gun : GunsInterface
     {
         public string ID;
-        private string name;
-        private int bullets;
-        private double prizeForOneShot;
+        public string name;
+        public int bullets;
+        public double prizeForOneShot;
+        public bool Automatic;
 
         private string generateUniqueID()
         {
@@ -64,31 +65,48 @@ namespace ShootingRange.Shop.Guns
             }
         }
         //-----------------------------------------------------------------------
-        public Gun(string name, int bullets, double prizeForOneShot)
+        public Gun(string name, int bullets, double prizeForOneShot, bool automatic)
         {
             ID = generateUniqueID();
             Name = name;
             Bullets = bullets;
-            PrizeForOneShot = prizeForOneShot;
+            Automatic = automatic;
+            if (automatic)
+            {
+                PrizeForOneShot = prizeForOneShot - prizeForOneShot*0.2;
+            }
+            else
+            {
+                PrizeForOneShot = prizeForOneShot;
+            }
+            
         }
         //-----------------------------------------------------------------------
         //Methods
         public void Information()
         {
             Console.WriteLine("-----------------------------------------------------------------------");
-            Console.WriteLine($"ID \t {ID}");
-            Console.WriteLine($"Name \t {Name}");
-            Console.WriteLine($"Bullets \t {Bullets}");
-            Console.WriteLine($"PrizeForOneShot \t {PrizeForOneShot}");
+            Console.WriteLine($"ID \t {ID} \n");
+            Console.WriteLine($"Name \t\t\t\t {Name}");
+            Console.WriteLine($"Bullets \t\t\t {Bullets}");
+            Console.WriteLine($"PrizeForOneShot \t\t {PrizeForOneShot}");
+            if (Automatic)
+            {
+                Console.WriteLine($"Automatic \t\t\t {Automatic} 20% discount included");
+            }
+            else
+            {
+                Console.WriteLine($"Automatic \t {Automatic} No discount");
+            }
             Console.WriteLine("-----------------------------------------------------------------------");
         }
 
         public void RenameGun()
         {
-            Console.WriteLine($"Name - {name}");
+            Console.WriteLine($"Old Name - {name}");
             Console.WriteLine("New name ?");
             string inp = Console.ReadLine();
-
+            Name = inp;
         }
 
         public void StausEditionAmmunition()
@@ -96,10 +114,7 @@ namespace ShootingRange.Shop.Guns
             Console.WriteLine($"bullets - {bullets}");
             Console.WriteLine("Change ?");
             int change = Int32.Parse(Console.ReadLine());
-            if (bullets - change < bullets)
-                Console.WriteLine("Not enough bullets in stock");
-            else
-                bullets = bullets + change;
+            bullets = bullets + change;
         }
 
 
