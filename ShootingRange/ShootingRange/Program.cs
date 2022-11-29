@@ -1,10 +1,5 @@
 ﻿using ShootingRange.Shop.Guns;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ShootingRange.Shop;
 using ShootingRange.ShopFolder.OrderFolder;
 
 namespace ShootingRange
