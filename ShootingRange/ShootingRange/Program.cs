@@ -37,12 +37,14 @@ namespace ShootingRange
             var run = true;
             while (run)
             {
+                shop.CheckingTheStockStatus();
                 Console.WriteLine("-----------------------------------------------------------------------");
                 Console.WriteLine("\t\t\t\t USER INTERFACE");
                 Console.WriteLine("-----------------------------------------------------------------------");
-                Console.WriteLine("a - Infofmations Magazine l - live o - AddOrder oo - OrderInformation");
-                Console.WriteLine("r - DeleteOrderByID");
+                Console.WriteLine("a  - Infofmations Magazine l - live o - AddOrder oo - OrderInformation");
+                Console.WriteLine("r  - DeleteOrderByID");
                 Console.WriteLine("w2 - AdGun w3 - AddBullets w4 - RenameGun w5 - PrizeForOneShot w6 - DeleteGun");
+                Console.WriteLine("t1 -TotalBill t2 - FullBillInformation t3 - GenerateABill");
                 Console.WriteLine("-----------------------------------------------------------------------");
                 var inp = Console.ReadLine().ToLower().Trim();
                 switch (inp)
@@ -80,6 +82,12 @@ namespace ShootingRange
                         break;
                     case "w6":
                         shop.DeleteGun();
+                        break;
+                    case "t1":
+                        shop.DeleteGun();
+                        break;
+                    case "t2":
+                        shop.FullBillInformation();
                         break;
                     default:
                         Console.Clear();

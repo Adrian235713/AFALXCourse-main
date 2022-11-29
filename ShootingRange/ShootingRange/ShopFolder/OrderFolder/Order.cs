@@ -22,8 +22,6 @@ namespace ShootingRange.ShopFolder.OrderFolder
         public double PriceOforder;
         double Dis = 0.2;
 
-
-
         public Order(string idGun, int numberOfShots,double pricePerShot, string date, string name, string lastName, bool discount)
         {
             UniqueIdOrder = generateUniqueID();
@@ -58,7 +56,7 @@ namespace ShootingRange.ShopFolder.OrderFolder
             Console.WriteLine($"UniqueIdOrder \t {UniqueIdOrder} \n");
             Console.WriteLine($"NumberOfShots \t {NumberOfShots}");
             Console.WriteLine($"Date \t {Date} \t Person \t {Name} {LastName}");
-            Console.WriteLine($"Ddiscount {Ddiscount} {Dis*100}% | Before tax {PriceOforder} | After tax {PriceOforder*1.22}");
+            Console.WriteLine($"Ddiscount {Ddiscount} {Dis*100}% | Before tax {PriceOforder} | After tax {PriceOforder*1.22} \n");
         }
     }
 }

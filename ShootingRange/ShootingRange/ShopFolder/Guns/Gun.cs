@@ -133,7 +133,5 @@ namespace ShootingRange.Shop.Guns
             else
                 prizeForOneShot = change;
         }
-
-        //-----------------------------------------------------------------------
     }
 }

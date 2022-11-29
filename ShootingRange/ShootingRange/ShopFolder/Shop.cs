@@ -1,8 +1,10 @@
 ﻿using ShootingRange.Shop.Guns;
 using ShootingRange.ShopFolder.OrderFolder;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -16,6 +18,23 @@ namespace ShootingRange.Shop
         //----------------------------------------------------------------------------------------------------------------------------
         //                              Magazine
         //----------------------------------------------------------------------------------------------------------------------------
+        public void CheckingTheStockStatus()
+        {
+            foreach(var gun in GunList)
+            {
+                if (gun.Bullets < 0)
+                {
+                    Console.WriteLine("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+                    Console.WriteLine("\t\t\t URGENT!");
+                    Console.WriteLine("Insufficient amount of ammo in storage !!!");
+                    Console.WriteLine($"gun \t {gun.bullets} bulets status");
+                    Console.WriteLine($"\t ID {gun.ID}");
+                    Console.WriteLine("Replenish the stock or delete the order");
+                    Console.WriteLine("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+                }
+            }
+        }
+
         public void AdGun()
         {
             Console.Clear();
@@ -136,7 +155,6 @@ namespace ShootingRange.Shop
                 i++;
             }
         }
-
         //----------------------------------------------------------------------------------------------------------------------------
         //                              Orders
         //----------------------------------------------------------------------------------------------------------------------------
@@ -184,8 +202,8 @@ namespace ShootingRange.Shop
                 {
                     Console.WriteLine(error.Message);
                 }
-                
             }
+            Console.Clear();
         }
 
         public void OrderInformation()
@@ -221,8 +239,31 @@ namespace ShootingRange.Shop
                 }
                 i++;
             }
+        }
+        //----------------------------------------------------------------------------------------------------------------------------
+        //                          Bill
+        //----------------------------------------------------------------------------------------------------------------------------
+        public void FullBillInformation()
+        {
+            Console.Clear();
+            Console.WriteLine("Enter Last Name");
+            var firstName = Console.ReadLine().ToLower().Trim();
+            Console.WriteLine("Enter the username");
+            var lastName = Console.ReadLine().ToLower().Trim();
+            double sum = 0;
+            foreach(Order order in Orders)
+            {
+                if (order.NameAndLastName == firstName + lastName)
+                {
+                    sum += order.PriceOforder;
+                }
+            }
+            Console.WriteLine("/////////////////////////////////////////////////////////////");
+            Console.WriteLine($"\tTotal price without tax {sum}zł | with tax {sum*1.22}zł");
+            Console.WriteLine("/////////////////////////////////////////////////////////////");
+            Console.WriteLine();
+        }
 
         //----------------------------------------------------------------------------------------------------------------------------
-        }
     }
 }
